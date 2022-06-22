@@ -1,0 +1,1103 @@
+{
+	"info": {
+		"_postman_id": "c0b3f586-124b-4e4e-91de-738a40b5bf52",
+		"name": "HW Postman_1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "EP_1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const users = [\r",
+							"    {\r",
+							"        firstName: 'John',\r",
+							"        lastName: 'Caper',\r",
+							"        phone: '7436676737634',\r",
+							"        registrationDate: '12.10.2021'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Clark',\r",
+							"        lastName: 'Kent',\r",
+							"        phone: '4346676737634',\r",
+							"        registrationDate: '16.09.2021'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Tony',\r",
+							"        lastName: 'Stark',\r",
+							"        phone: '7436698337634',\r",
+							"        registrationDate: '11.10.2021'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Bruce',\r",
+							"        lastName: 'Wayne',\r",
+							"        phone: '1111176737634',\r",
+							"        registrationDate: '09.10.2021'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Star',\r",
+							"        lastName: 'Lord',\r",
+							"        phone: '7439374737634',\r",
+							"        registrationDate: '10.10.2021'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Kate',\r",
+							"        lastName: 'Bishop',\r",
+							"        phone: '7436693647634',\r",
+							"        registrationDate: '11.10.2021'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Jerry',\r",
+							"        lastName: 'James',\r",
+							"        phone: '7409048737634',\r",
+							"        registrationDate: '10.10.2021'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Jeremy',\r",
+							"        lastName: 'Clarkson',\r",
+							"        phone: '743667600289334',\r",
+							"        registrationDate: '16.10.2020'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Robert',\r",
+							"        lastName: 'Patrik',\r",
+							"        phone: '7436676730093',\r",
+							"        registrationDate: '10.10.2020'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Jonny',\r",
+							"        lastName: 'Sins',\r",
+							"        phone: '74923982737634',\r",
+							"        registrationDate: '01.01.2021'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Andrew',\r",
+							"        lastName: 'Garfield',\r",
+							"        phone: '743667988344',\r",
+							"        registrationDate: '09.10.2019'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Jane',\r",
+							"        lastName: 'Foster',\r",
+							"        phone: '74368783427634',\r",
+							"        registrationDate: '09.10.2019'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Rick',\r",
+							"        lastName: 'Smith',\r",
+							"        phone: '700000037634',\r",
+							"        registrationDate: '12.10.2021'\r",
+							"    },\r",
+							"];\r",
+							"\r",
+							"pm.test(\"users_1\", function () {\r",
+							"    pm.expect(users).to.deep.include({\"registrationDate\": \"09.10.2021, 10.10.2022\"})\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "str",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "age",
+							"value": "int",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "default",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://162.55.220.72:5005/get_method?name=Ann&age=30",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005",
+					"path": [
+						"get_method"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Ann"
+						},
+						{
+							"key": "age",
+							"value": "30"
+						},
+						{
+							"key": "salary",
+							"value": "200usre_info_2",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EP_2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const users = [\r",
+							"    {\r",
+							"        firstName: 'John',\r",
+							"        lastName: 'Caper',\r",
+							"        phone: '7436676737634',\r",
+							"        registrationDate: '12.10.2021'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Clark',\r",
+							"        lastName: 'Kent',\r",
+							"        phone: '4346676737634',\r",
+							"        registrationDate: '16.09.2021'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Tony',\r",
+							"        lastName: 'Stark',\r",
+							"        phone: '7436698337634',\r",
+							"        registrationDate: '11.10.2021'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Bruce',\r",
+							"        lastName: 'Wayne',\r",
+							"        phone: '1111176737634',\r",
+							"        registrationDate: '09.10.2021'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Star',\r",
+							"        lastName: 'Lord',\r",
+							"        phone: '7439374737634',\r",
+							"        registrationDate: '10.10.2021'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Kate',\r",
+							"        lastName: 'Bishop',\r",
+							"        phone: '7436693647634',\r",
+							"        registrationDate: '11.10.2021'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Jerry',\r",
+							"        lastName: 'James',\r",
+							"        phone: '7409048737634',\r",
+							"        registrationDate: '10.10.2021'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Jeremy',\r",
+							"        lastName: 'Clarkson',\r",
+							"        phone: '743667600289334',\r",
+							"        registrationDate: '16.10.2020'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Robert',\r",
+							"        lastName: 'Patrik',\r",
+							"        phone: '7436676730093',\r",
+							"        registrationDate: '10.10.2020'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Jonny',\r",
+							"        lastName: 'Sins',\r",
+							"        phone: '74923982737634',\r",
+							"        registrationDate: '01.01.2021'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Andrew',\r",
+							"        lastName: 'Garfield',\r",
+							"        phone: '743667988344',\r",
+							"        registrationDate: '09.10.2019'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Jane',\r",
+							"        lastName: 'Foster',\r",
+							"        phone: '74368783427634',\r",
+							"        registrationDate: '09.10.2019'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Rick',\r",
+							"        lastName: 'Smith',\r",
+							"        phone: '700000037634',\r",
+							"        registrationDate: '12.10.2021'\r",
+							"    },\r",
+							"];\r",
+							"\r",
+							"pm.test(\"users_1\", function () {\r",
+							"    pm.expect(users).to.deep.include({\"registrationDate\": \"09.10.2021, 10.10.2022\"})\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Ann",
+							"type": "default"
+						},
+						{
+							"key": "age",
+							"value": "35",
+							"type": "default"
+						},
+						{
+							"key": "salary",
+							"value": "1000",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://162.55.220.72:5005/user_info_3",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005",
+					"path": [
+						"user_info_3"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "str",
+							"disabled": true
+						},
+						{
+							"key": "age",
+							"value": "int",
+							"disabled": true
+						},
+						{
+							"key": "salary",
+							"value": "200usre_info_2",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EP_3",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const users = [\r",
+							"    {\r",
+							"        firstName: 'John',\r",
+							"        lastName: 'Caper',\r",
+							"        phone: '7436676737634',\r",
+							"        registrationDate: '12.10.2021'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Clark',\r",
+							"        lastName: 'Kent',\r",
+							"        phone: '4346676737634',\r",
+							"        registrationDate: '16.09.2021'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Tony',\r",
+							"        lastName: 'Stark',\r",
+							"        phone: '7436698337634',\r",
+							"        registrationDate: '11.10.2021'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Bruce',\r",
+							"        lastName: 'Wayne',\r",
+							"        phone: '1111176737634',\r",
+							"        registrationDate: '09.10.2021'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Star',\r",
+							"        lastName: 'Lord',\r",
+							"        phone: '7439374737634',\r",
+							"        registrationDate: '10.10.2021'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Kate',\r",
+							"        lastName: 'Bishop',\r",
+							"        phone: '7436693647634',\r",
+							"        registrationDate: '11.10.2021'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Jerry',\r",
+							"        lastName: 'James',\r",
+							"        phone: '7409048737634',\r",
+							"        registrationDate: '10.10.2021'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Jeremy',\r",
+							"        lastName: 'Clarkson',\r",
+							"        phone: '743667600289334',\r",
+							"        registrationDate: '16.10.2020'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Robert',\r",
+							"        lastName: 'Patrik',\r",
+							"        phone: '7436676730093',\r",
+							"        registrationDate: '10.10.2020'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Jonny',\r",
+							"        lastName: 'Sins',\r",
+							"        phone: '74923982737634',\r",
+							"        registrationDate: '01.01.2021'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Andrew',\r",
+							"        lastName: 'Garfield',\r",
+							"        phone: '743667988344',\r",
+							"        registrationDate: '09.10.2019'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Jane',\r",
+							"        lastName: 'Foster',\r",
+							"        phone: '74368783427634',\r",
+							"        registrationDate: '09.10.2019'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Rick',\r",
+							"        lastName: 'Smith',\r",
+							"        phone: '700000037634',\r",
+							"        registrationDate: '12.10.2021'\r",
+							"    },\r",
+							"];\r",
+							"\r",
+							"pm.test(\"users_1\", function () {\r",
+							"    pm.expect(users).to.deep.include({\"registrationDate\": \"09.10.2021, 10.10.2022\"})\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Ann",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "age",
+							"value": "35",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "weight",
+							"value": "50",
+							"type": "default",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://162.55.220.72:5005/object_info_1?name=Ann&age=35&weight=50",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005",
+					"path": [
+						"object_info_1"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Ann"
+						},
+						{
+							"key": "age",
+							"value": "35"
+						},
+						{
+							"key": "weight",
+							"value": "50"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EP_4",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const users = [\r",
+							"    {\r",
+							"        firstName: 'John',\r",
+							"        lastName: 'Caper',\r",
+							"        phone: '7436676737634',\r",
+							"        registrationDate: '12.10.2021'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Clark',\r",
+							"        lastName: 'Kent',\r",
+							"        phone: '4346676737634',\r",
+							"        registrationDate: '16.09.2021'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Tony',\r",
+							"        lastName: 'Stark',\r",
+							"        phone: '7436698337634',\r",
+							"        registrationDate: '11.10.2021'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Bruce',\r",
+							"        lastName: 'Wayne',\r",
+							"        phone: '1111176737634',\r",
+							"        registrationDate: '09.10.2021'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Star',\r",
+							"        lastName: 'Lord',\r",
+							"        phone: '7439374737634',\r",
+							"        registrationDate: '10.10.2021'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Kate',\r",
+							"        lastName: 'Bishop',\r",
+							"        phone: '7436693647634',\r",
+							"        registrationDate: '11.10.2021'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Jerry',\r",
+							"        lastName: 'James',\r",
+							"        phone: '7409048737634',\r",
+							"        registrationDate: '10.10.2021'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Jeremy',\r",
+							"        lastName: 'Clarkson',\r",
+							"        phone: '743667600289334',\r",
+							"        registrationDate: '16.10.2020'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Robert',\r",
+							"        lastName: 'Patrik',\r",
+							"        phone: '7436676730093',\r",
+							"        registrationDate: '10.10.2020'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Jonny',\r",
+							"        lastName: 'Sins',\r",
+							"        phone: '74923982737634',\r",
+							"        registrationDate: '01.01.2021'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Andrew',\r",
+							"        lastName: 'Garfield',\r",
+							"        phone: '743667988344',\r",
+							"        registrationDate: '09.10.2019'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Jane',\r",
+							"        lastName: 'Foster',\r",
+							"        phone: '74368783427634',\r",
+							"        registrationDate: '09.10.2019'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Rick',\r",
+							"        lastName: 'Smith',\r",
+							"        phone: '700000037634',\r",
+							"        registrationDate: '12.10.2021'\r",
+							"    },\r",
+							"];\r",
+							"\r",
+							"pm.test(\"users_1\", function () {\r",
+							"    pm.expect(users).to.deep.include({\"registrationDate\": \"09.10.2021, 10.10.2022\"})\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Ann",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "age",
+							"value": "35",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "salary",
+							"value": "1000",
+							"type": "default",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://162.55.220.72:5005/object_info_2?name=Ann&age=35&salary=1000",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005",
+					"path": [
+						"object_info_2"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Ann"
+						},
+						{
+							"key": "age",
+							"value": "35"
+						},
+						{
+							"key": "salary",
+							"value": "1000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EP_5",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const users = [\r",
+							"    {\r",
+							"        firstName: 'John',\r",
+							"        lastName: 'Caper',\r",
+							"        phone: '7436676737634',\r",
+							"        registrationDate: '12.10.2021'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Clark',\r",
+							"        lastName: 'Kent',\r",
+							"        phone: '4346676737634',\r",
+							"        registrationDate: '16.09.2021'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Tony',\r",
+							"        lastName: 'Stark',\r",
+							"        phone: '7436698337634',\r",
+							"        registrationDate: '11.10.2021'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Bruce',\r",
+							"        lastName: 'Wayne',\r",
+							"        phone: '1111176737634',\r",
+							"        registrationDate: '09.10.2021'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Star',\r",
+							"        lastName: 'Lord',\r",
+							"        phone: '7439374737634',\r",
+							"        registrationDate: '10.10.2021'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Kate',\r",
+							"        lastName: 'Bishop',\r",
+							"        phone: '7436693647634',\r",
+							"        registrationDate: '11.10.2021'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Jerry',\r",
+							"        lastName: 'James',\r",
+							"        phone: '7409048737634',\r",
+							"        registrationDate: '10.10.2021'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Jeremy',\r",
+							"        lastName: 'Clarkson',\r",
+							"        phone: '743667600289334',\r",
+							"        registrationDate: '16.10.2020'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Robert',\r",
+							"        lastName: 'Patrik',\r",
+							"        phone: '7436676730093',\r",
+							"        registrationDate: '10.10.2020'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Jonny',\r",
+							"        lastName: 'Sins',\r",
+							"        phone: '74923982737634',\r",
+							"        registrationDate: '01.01.2021'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Andrew',\r",
+							"        lastName: 'Garfield',\r",
+							"        phone: '743667988344',\r",
+							"        registrationDate: '09.10.2019'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Jane',\r",
+							"        lastName: 'Foster',\r",
+							"        phone: '74368783427634',\r",
+							"        registrationDate: '09.10.2019'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Rick',\r",
+							"        lastName: 'Smith',\r",
+							"        phone: '700000037634',\r",
+							"        registrationDate: '12.10.2021'\r",
+							"    },\r",
+							"];\r",
+							"\r",
+							"pm.test(\"users_1\", function () {\r",
+							"    pm.expect(users).to.deep.include({\"registrationDate\": \"09.10.2021, 10.10.2022\"})\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Ann",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "age",
+							"value": "35",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "salary",
+							"value": "1000",
+							"type": "default",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://162.55.220.72:5005/object_info_3?name=Ann&age=35&salary=1000",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005",
+					"path": [
+						"object_info_3"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Ann"
+						},
+						{
+							"key": "age",
+							"value": "35"
+						},
+						{
+							"key": "salary",
+							"value": "1000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EP_6",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const users = [\r",
+							"    {\r",
+							"        firstName: 'John',\r",
+							"        lastName: 'Caper',\r",
+							"        phone: '7436676737634',\r",
+							"        registrationDate: '12.10.2021'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Clark',\r",
+							"        lastName: 'Kent',\r",
+							"        phone: '4346676737634',\r",
+							"        registrationDate: '16.09.2021'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Tony',\r",
+							"        lastName: 'Stark',\r",
+							"        phone: '7436698337634',\r",
+							"        registrationDate: '11.10.2021'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Bruce',\r",
+							"        lastName: 'Wayne',\r",
+							"        phone: '1111176737634',\r",
+							"        registrationDate: '09.10.2021'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Star',\r",
+							"        lastName: 'Lord',\r",
+							"        phone: '7439374737634',\r",
+							"        registrationDate: '10.10.2021'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Kate',\r",
+							"        lastName: 'Bishop',\r",
+							"        phone: '7436693647634',\r",
+							"        registrationDate: '11.10.2021'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Jerry',\r",
+							"        lastName: 'James',\r",
+							"        phone: '7409048737634',\r",
+							"        registrationDate: '10.10.2021'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Jeremy',\r",
+							"        lastName: 'Clarkson',\r",
+							"        phone: '743667600289334',\r",
+							"        registrationDate: '16.10.2020'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Robert',\r",
+							"        lastName: 'Patrik',\r",
+							"        phone: '7436676730093',\r",
+							"        registrationDate: '10.10.2020'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Jonny',\r",
+							"        lastName: 'Sins',\r",
+							"        phone: '74923982737634',\r",
+							"        registrationDate: '01.01.2021'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Andrew',\r",
+							"        lastName: 'Garfield',\r",
+							"        phone: '743667988344',\r",
+							"        registrationDate: '09.10.2019'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Jane',\r",
+							"        lastName: 'Foster',\r",
+							"        phone: '74368783427634',\r",
+							"        registrationDate: '09.10.2019'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Rick',\r",
+							"        lastName: 'Smith',\r",
+							"        phone: '700000037634',\r",
+							"        registrationDate: '12.10.2021'\r",
+							"    },\r",
+							"];\r",
+							"\r",
+							"pm.test(\"users_1\", function () {\r",
+							"    pm.expect(users).to.deep.include({\"registrationDate\": \"09.10.2021, 10.10.2022\"})\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Ann",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "age",
+							"value": "35",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "salary",
+							"value": "1000",
+							"type": "default",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://162.55.220.72:5005/object_info_4?name=Ann&age=35&salary=1000",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005",
+					"path": [
+						"object_info_4"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Ann"
+						},
+						{
+							"key": "age",
+							"value": "35"
+						},
+						{
+							"key": "salary",
+							"value": "1000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EP_7",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const users = [\r",
+							"    {\r",
+							"        firstName: 'John',\r",
+							"        lastName: 'Caper',\r",
+							"        phone: '7436676737634',\r",
+							"        registrationDate: '12.10.2021'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Clark',\r",
+							"        lastName: 'Kent',\r",
+							"        phone: '4346676737634',\r",
+							"        registrationDate: '16.09.2021'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Tony',\r",
+							"        lastName: 'Stark',\r",
+							"        phone: '7436698337634',\r",
+							"        registrationDate: '11.10.2021'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Bruce',\r",
+							"        lastName: 'Wayne',\r",
+							"        phone: '1111176737634',\r",
+							"        registrationDate: '09.10.2021'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Star',\r",
+							"        lastName: 'Lord',\r",
+							"        phone: '7439374737634',\r",
+							"        registrationDate: '10.10.2021'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Kate',\r",
+							"        lastName: 'Bishop',\r",
+							"        phone: '7436693647634',\r",
+							"        registrationDate: '11.10.2021'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Jerry',\r",
+							"        lastName: 'James',\r",
+							"        phone: '7409048737634',\r",
+							"        registrationDate: '10.10.2021'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Jeremy',\r",
+							"        lastName: 'Clarkson',\r",
+							"        phone: '743667600289334',\r",
+							"        registrationDate: '16.10.2020'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Robert',\r",
+							"        lastName: 'Patrik',\r",
+							"        phone: '7436676730093',\r",
+							"        registrationDate: '10.10.2020'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Jonny',\r",
+							"        lastName: 'Sins',\r",
+							"        phone: '74923982737634',\r",
+							"        registrationDate: '01.01.2021'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Andrew',\r",
+							"        lastName: 'Garfield',\r",
+							"        phone: '743667988344',\r",
+							"        registrationDate: '09.10.2019'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Jane',\r",
+							"        lastName: 'Foster',\r",
+							"        phone: '74368783427634',\r",
+							"        registrationDate: '09.10.2019'\r",
+							"    },\r",
+							"    {\r",
+							"        firstName: 'Rick',\r",
+							"        lastName: 'Smith',\r",
+							"        phone: '700000037634',\r",
+							"        registrationDate: '12.10.2021'\r",
+							"    },\r",
+							"];\r",
+							"\r",
+							"pm.test(\"users_1\", function () {\r",
+							"    pm.expect(users).to.deep.include({\"registrationDate\": \"09.10.2021, 10.10.2022\"})\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Ann",
+							"type": "default"
+						},
+						{
+							"key": "age",
+							"value": "35",
+							"type": "default"
+						},
+						{
+							"key": "salary",
+							"value": "1000",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://162.55.220.72:5005/user_info_2",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005",
+					"path": [
+						"user_info_2"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "str",
+							"disabled": true
+						},
+						{
+							"key": "age",
+							"value": "int",
+							"disabled": true
+						},
+						{
+							"key": "salary",
+							"value": "200usre_info_2",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
