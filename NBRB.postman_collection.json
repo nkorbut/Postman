@@ -1,0 +1,139 @@
+{
+	"info": {
+		"_postman_id": "d6f0c3c6-3115-4a80-9f43-2adc9a94bc10",
+		"name": "NBRB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "4774201"
+	},
+	"item": [
+		{
+			"name": " https://api.nbrb.by/exrates/currencies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://api.nbrb.by/exrates/currencies"
+			},
+			"response": []
+		},
+		{
+			"name": " https://api.nbrb.by/exrates/rates/143?parammode=1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.nbrb.by/exrates/rates/826?parammode=1",
+					"protocol": "https",
+					"host": [
+						"api",
+						"nbrb",
+						"by"
+					],
+					"path": [
+						"exrates",
+						"rates",
+						"826"
+					],
+					"query": [
+						{
+							"key": "parammode",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.nbrb.by/exrates/rates?periodicity=0",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.nbrb.by/exrates/rates?periodicity=0",
+					"protocol": "https",
+					"host": [
+						"api",
+						"nbrb",
+						"by"
+					],
+					"path": [
+						"exrates",
+						"rates"
+					],
+					"query": [
+						{
+							"key": "periodicity",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.nbrb.by/exrates/rates/USD?parammode=2&ondate=2019-12-05",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.nbrb.by/exrates/rates/USD?parammode=2&ondate=2019-12-05",
+					"protocol": "https",
+					"host": [
+						"api",
+						"nbrb",
+						"by"
+					],
+					"path": [
+						"exrates",
+						"rates",
+						"USD"
+					],
+					"query": [
+						{
+							"key": "parammode",
+							"value": "2"
+						},
+						{
+							"key": "ondate",
+							"value": "2019-12-05"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.nbrb.by/exrates/rates/dynamics/145?startDate=2019-01-01&endDate=2019-06-10",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.nbrb.by/exrates/rates/dynamics/145?startDate=2019-01-01&endDate=2019-06-10",
+					"protocol": "https",
+					"host": [
+						"api",
+						"nbrb",
+						"by"
+					],
+					"path": [
+						"exrates",
+						"rates",
+						"dynamics",
+						"145"
+					],
+					"query": [
+						{
+							"key": "startDate",
+							"value": "2019-01-01"
+						},
+						{
+							"key": "endDate",
+							"value": "2019-06-10"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
